@@ -1,1180 +1,458 @@
-<!DOCTYPE html>
-
-<html class="dark scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Mizanur Rahman — Creative Technologist &amp; Electrical Engineer</title>
-<!-- Material Symbols & Typography -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          "colors": {
-            "surface-bright": "#37393f",
-            "error": "#ffb4ab",
-            "secondary-fixed": "#dce2f7",
-            "secondary-container": "#42495a",
-            "background": "#111318",
-            "primary-fixed": "#d8e2ff",
-            "secondary": "#c0c6db",
-            "on-tertiary-fixed-variant": "#723600",
-            "tertiary-fixed": "#ffdcc6",
-            "error-container": "#93000a",
-            "surface-container-high": "#282a2f",
-            "on-primary-container": "#00285d",
-            "on-tertiary-fixed": "#311400",
-            "primary-fixed-dim": "#adc6ff",
-            "surface-container-low": "#1a1b21",
-            "outline": "#8c909f",
-            "inverse-primary": "#005ac2",
-            "inverse-surface": "#e2e2e9",
-            "surface-container-lowest": "#0c0e13",
-            "primary": "#adc6ff",
-            "on-background": "#e2e2e9",
-            "on-tertiary-container": "#461f00",
-            "on-secondary-fixed": "#141b2a",
-            "surface-container-highest": "#33353a",
-            "on-surface": "#e2e2e9",
-            "on-secondary": "#293040",
-            "tertiary": "#ffb786",
-            "on-error-container": "#ffdad6",
-            "surface-dim": "#111318",
-            "tertiary-container": "#df7412",
-            "secondary-fixed-dim": "#c0c6db",
-            "on-secondary-fixed-variant": "#404757",
-            "outline-variant": "#424754",
-            "surface-variant": "#33353a",
-            "on-primary-fixed-variant": "#004395",
-            "on-primary": "#002e6a",
-            "inverse-on-surface": "#2e3036",
-            "primary-container": "#4d8eff",
-            "on-primary-fixed": "#001a42",
-            "on-tertiary": "#502400",
-            "surface-tint": "#adc6ff",
-            "on-surface-variant": "#c2c6d6",
-            "on-error": "#690005",
-            "surface": "#111318",
-            "on-secondary-container": "#b1b8cc",
-            "surface-container": "#1e1f25",
-            "tertiary-fixed-dim": "#ffb786"
-          },
-          "borderRadius": {
-            "DEFAULT": "0.125rem",
-            "lg": "0.25rem",
-            "xl": "0.5rem",
-            "full": "0.75rem"
-          },
-          "spacing": {
-            "margin-tablet": "2.5rem",
-            "gutter-desktop": "2.5rem",
-            "space-lg": "1.5rem",
-            "margin": "1.25rem",
-            "margin-desktop": "5rem",
-            "gutter": "1.5rem",
-            "space-sm": "0.5rem",
-            "space-md": "1rem",
-            "space-xl": "2.5rem",
-            "space-xs": "0.25rem",
-            "space-2xl": "4rem",
-            "space-3xl": "6rem"
-          },
-          "fontFamily": {
-            "label-mono": ["JetBrains Mono"],
-            "display-hero": ["Manrope"],
-            "display-hero-mobile": ["Manrope"],
-            "body-lg": ["Manrope"],
-            "headline-lg-mobile": ["Manrope"],
-            "body-sm": ["Manrope"],
-            "headline-sm": ["Manrope"],
-            "headline-md": ["Manrope"],
-            "body-md": ["Manrope"],
-            "label-ui": ["Manrope"],
-            "headline-lg": ["Manrope"]
-          },
-          "fontSize": {
-            "label-mono": ["0.75rem", { "lineHeight": "1.4", "letterSpacing": "0.08em", "fontWeight": "500" }],
-            "display-hero": ["4.5rem", { "lineHeight": "1.05", "letterSpacing": "-0.035em", "fontWeight": "800" }],
-            "display-hero-mobile": ["2.75rem", { "lineHeight": "1.1", "letterSpacing": "-0.025em", "fontWeight": "800" }],
-            "body-lg": ["1.125rem", { "lineHeight": "1.7", "letterSpacing": "-0.005em", "fontWeight": "400" }],
-            "headline-lg-mobile": ["2rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-            "body-sm": ["0.8125rem", { "lineHeight": "1.5", "letterSpacing": "0.005em", "fontWeight": "400" }],
-            "headline-sm": ["1.25rem", { "lineHeight": "1.35", "letterSpacing": "-0.015em", "fontWeight": "600" }],
-            "headline-md": ["1.75rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "600" }],
-            "body-md": ["0.9375rem", { "lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400" }],
-            "label-ui": ["0.875rem", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }],
-            "headline-lg": ["2.75rem", { "lineHeight": "1.15", "letterSpacing": "-0.025em", "fontWeight": "700" }]
-          }
-        }
-      }
-    }
-  </script>
-<style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      display: inline-block;
-      vertical-align: middle;
-      line-height: 1;
-    }
-    .technical-grid {
-      background-size: 40px 40px;
-      background-image: 
-        linear-gradient(to right, rgba(66, 71, 84, 0.15) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(66, 71, 84, 0.15) 1px, transparent 1px);
-    }
-    .glow-photon {
-      box-shadow: 0 0 24px -4px rgba(77, 142, 255, 0.25);
-    }
-  </style>
-</head>
-<body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col font-body-md">
-<!-- TOP NAV BAR (Shared Component Anchor) -->
-<header class="bg-surface/85 backdrop-blur-md border-b border-outline-variant/30 docked full-width top-0 sticky z-50">
-<div class="flex justify-between items-center w-full px-5 md:px-10 lg:px-20 max-w-[1360px] mx-auto h-16">
-<!-- Brand Logo / Custom Wordmark -->
-<a class="flex items-center gap-3 group" href="#">
-<img alt="Mizanur Rahman Monogram &amp; Wordmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WxonXZLi8JxiO0u4j6WGsHVWPzxk7KdmtmKZqI_RK8hsbnQi-LH35afUIGbP7aRDGOvVzMaIo2Lj9_WYq9bLWgyYZGCl0VPb4zzXPO--7NqusYlrXCJkRPWZfXoAaI8fj53DH6G8SM1AqnIQYKqVChfce2bHUJu9-6dvnJbV_5Gca7ulC6YWY-jzOJaznxgTM4-h_sLqlEkAEipC1HEk0_YLGiJkZRkyeESmivfkJW_xCNajc_mGWDWxlu"/>
-<span class="text-headline-sm font-headline-sm font-bold tracking-tight text-on-surface hidden sm:inline-block">MR</span>
-</a>
-<!-- Desktop Navigation Menu -->
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-150 text-label-mono font-label-mono" href="#about">About</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-150 text-label-mono font-label-mono" href="#skills">Skills</a>
-<a class="text-primary border-b border-primary pb-1 text-label-mono font-label-mono" href="#projects">Projects</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-150 text-label-mono font-label-mono" href="#education">Education</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-150 text-label-mono font-label-mono" href="#beyond">Beyond</a>
-</nav>
-<!-- Trailing Action & Mobile Trigger -->
-<div class="flex items-center gap-3">
-<a class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary-container text-on-primary-container font-label-ui text-label-ui hover:bg-primary transition-all duration-150 shadow-sm active:scale-[0.98]" href="#contact">
-          Let's Connect
-        </a>
-<button aria-label="Toggle mobile menu" class="md:hidden p-2 text-on-surface-variant hover:text-on-surface rounded-lg border border-outline-variant/40" id="mobileNavToggle">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-</div>
-</div>
-<!-- Mobile Drawer / Menu -->
-<div class="hidden md:hidden border-t border-outline-variant/30 bg-surface-container-low px-5 py-6" id="mobileDrawer">
-<div class="flex flex-col gap-4">
-<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary py-1" href="#about">About</a>
-<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary py-1" href="#skills">Skills</a>
-<a class="text-body-md font-body-md text-primary font-semibold py-1" href="#projects">Projects</a>
-<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary py-1" href="#education">Education</a>
-<a class="text-body-md font-body-md text-on-surface-variant hover:text-primary py-1" href="#beyond">Beyond</a>
-<a class="mt-2 text-center py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-ui text-label-ui" href="#contact">Let's Connect</a>
-</div>
-</div>
-</header>
-<main class="flex-grow">
+<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>LEAH. — Cinematic Portfolio</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#ffafd5", "on-primary-fixed-variant": "#8a005e", "on-secondary-fixed": "#2a1800", "on-primary": "#620042", "primary-fixed": "#ffd8e8", "on-secondary": "#422c0d", "surface": "#131313", "tertiary-fixed": "#a1f96b", "surface-container-lowest": "#0e0e0e", "on-tertiary-fixed": "#092100", "outline-variant": "#57404a", "on-primary-fixed": "#3d0027", "on-secondary-fixed-variant": "#5b4221", "tertiary-fixed-dim": "#86dc52", "on-error": "#690005", "background": "#131313", "error-container": "#93000a", "secondary-fixed-dim": "#e5c095", "primary-container": "#f84ab3", "on-surface-variant": "#debecb", "surface-container-high": "#2a2a2a", "surface-bright": "#3a3939", "on-tertiary-fixed-variant": "#215100", "inverse-surface": "#e5e2e1", "secondary-fixed": "#ffddb6", "surface-container-highest": "#353534", "error": "#ffb4ab", "inverse-on-surface": "#313030", "on-secondary-container": "d2af85", "primary-fixed-dim": "#ffafd5", "on-background": "#e5e2e1", "outline": "#a58995", "surface-variant": "#353534", "secondary": "#e5c095", "on-tertiary-container": "#113100", "on-primary-container": "#560039", "on-surface": "#e5e2e1", "tertiary": "#86dc52", "inverse-primary": "#b5007d", "surface-container": "#201f1f", "tertiary-container": "#52a31d", "secondary-container": "#5b4221", "surface-dim": "#131313", "surface-container-low": "#1c1b1b", "on-error-container": "#ffdad6", "surface-tint": "#ffafd5", "on-tertiary": "#153800" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "4rem", "space-3xl": "6rem", "space-xl": "2.5rem", "space-2xl": "4rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-tablet": "2rem", "gutter": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "1rem", "space-lg": "1.5rem" }, "fontFamily": { "display-hero-mobile": ["Space Grotesk"], "body-lg": ["Inter"], "body-sm": ["Inter"], "headline-md": ["Space Grotesk"], "label-gold": ["Inter"], "headline-lg-mobile": ["Space Grotesk"], "body-md": ["Inter"], "headline-lg": ["Space Grotesk"], "display-hero": ["Space Grotesk"], "stat-counter": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "label-uppercase": ["Space Grotesk"], "title-editorial": ["Space Grotesk"] }, "fontSize": { "display-hero-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-gold": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }], "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-hero": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "stat-counter": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500" }], "label-uppercase": ["11px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700" }], "title-editorial": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-[#111111]/80 backdrop-blur-md border-b border-[#222222]"><div class="h-16 max-w-[1060px] mx-auto px-gutter-mobile md:px-gutter flex items-center justify-between"><div class="flex items-center gap-3"><img alt="LEAH. Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WMgs-ImP4_1m8PzIJ-1Q6nxet-1Ztxz2ZmdFloW5vw9lGYJLY6OWU6Ucxt_OGtl_0VS-tXbPXnQY6Aa2CMqxmcuznCfiePI1-gG4RzoqsPs4B8n5ahwXAUq3swGubmg-Q5KCymNo-T_NSOHGsqNPOhOaQjKsuspg3LcAR5cZlmYRqyl5rz0yAOxQVXfgCALnOaoXx5pBwiJH-Hv7gcjFQm6q62Vkghd0lEBaHVCxtnGL0dJPsbUgSZ2A"><a class="font-headline-sm text-headline-sm text-on-surface tracking-tight flex items-center select-none" data-path="portfolio" href="#">LEAH<span class="text-primary-container">.</span></a></div><div class="flex items-center gap-6"><nav class="flex items-center gap-6 md:gap-8" data-active-classes="text-on-surface font-semibold"><a class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="about" href="#">About</a><a class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="works" href="#">Works</a><a class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="engineering" href="#">Engineering</a><a class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="contact" href="#">Contact</a></nav><div class="pl-4 border-l border-[#222222] flex items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFOuOsZmS7TDsj-GIDcKuPHegdygb23N52qseo7NmsgLh5hy6xU2vJA-Xlb3rbYKdCw3qQa4p2L8G4gpOfRX9f25As6yA2vNiMChbOH1scfCzwPfyjdLR1RS240GESilWnn6k01sFZU4M34RD03N2e3u5NHP6m040LUiX5diNNeCGVhnMX4aiysg160L5H3Rey2aTPGI8mT35llYe443St1H3V5a1gpybBOGwKkWj52JNJytwSttqdV-rrj601lrgvsg"></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-80px)]"><div class="max-w-[1060px] mx-auto px-gutter-mobile md:px-gutter py-space-xl"><div class="flex flex-col w-full text-on-surface">
 <!-- HERO SECTION -->
-<section class="relative pt-12 md:pt-20 pb-20 md:pb-28 technical-grid border-b border-outline-variant/20 overflow-hidden">
-<!-- Subtle Atmospheric Radial Glow -->
-<div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-primary-container/10 blur-[130px] pointer-events-none rounded-full"></div>
-<div class="max-w-[1360px] mx-auto px-5 md:px-10 lg:px-20 relative z-10">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-<!-- Hero Text Content -->
-<div class="lg:col-span-7 flex flex-col items-start">
-<!-- Telemetry Pill / Eyebrow Badge -->
-<div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/50 mb-6">
-<span class="relative flex h-2 w-2">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
-<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-</span>
-<span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">CREATIVE THINKER | AI CONTENT ENTHUSIAST</span>
-</div>
-<!-- Main Headline -->
-<h1 class="text-display-hero-mobile md:text-display-hero font-display-hero text-on-surface tracking-tight mb-6">
-              Turning Ideas Into Creative Digital Experiences.
-            </h1>
-<!-- Supporting Bio -->
-<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mb-8 leading-relaxed">
-              I'm Mizanur Rahman, an EEE diploma graduate from Narayanganj Polytechnic Institute with a strong interest in AI-powered content creation, creative design, digital marketing, and emerging technologies.
-            </p>
-<!-- Status Indicator Callout -->
-<div class="flex items-center gap-2 mb-8 text-label-mono text-label-mono text-primary bg-primary/5 border border-primary/20 px-3.5 py-1.5 rounded-lg">
-<span class="material-symbols-outlined text-[16px]" data-icon="deployed_code">deployed_code</span>
-<span>Open to opportunities @ Maktech IT &amp; innovative teams</span>
-</div>
-<!-- Action Cluster -->
-<div class="flex flex-wrap items-center gap-4 w-full sm:w-auto">
-<a class="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-primary text-on-primary font-label-ui text-label-ui hover:bg-primary-fixed-dim transition-all duration-150 flex items-center justify-center gap-2 shadow-sm active:scale-[0.98]" href="#projects">
-<span>Explore My Work</span>
-<span class="material-symbols-outlined text-[18px]" data-icon="arrow_downward">arrow_downward</span>
+<section class="relative w-full pt-8 md:pt-14 pb-16 overflow-hidden">
+<!-- Ambient Radial Glows -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/15 rounded-full blur-[110px] pointer-events-none"></div>
+<div class="absolute -bottom-20 -left-20 w-80 h-80 bg-secondary/10 rounded-full blur-[90px] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
+<!-- Eyebrow -->
+<span class="inline-flex items-center gap-2 font-label-gold text-label-gold text-secondary uppercase tracking-[0.2em] mb-4">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+        Electrical &amp; Electronic Engineer · AI Content Creator
+      </span>
+<!-- Primary Headline -->
+<h1 class="font-display-hero text-headline-lg md:text-display-hero tracking-tight leading-[1.08] text-on-surface mb-5">
+        Written by His Grace. <span class="text-primary-container font-semibold">Guided by His Hand.</span>
+</h1>
+<!-- Subline -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-8 font-light">
+        Explore My World of Creativity
+      </p>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-4 mb-14">
+<a class="px-7 py-3.5 rounded-[10px] bg-primary-container text-on-surface font-headline-sm text-body-md font-medium tracking-wide shadow-[0_0_24px_rgba(224,53,159,0.38)] hover:shadow-[0_0_32px_rgba(224,53,159,0.6)] transition-all duration-300 flex items-center gap-2 group" href="#works">
+<span class="">View Works</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
-<a class="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-surface-container border border-outline-variant hover:border-primary text-on-surface font-label-ui text-label-ui transition-all duration-150 flex items-center justify-center gap-2 hover:bg-surface-container-high" href="#contact">
-<span>Contact Me</span>
-</a>
-<button class="w-full sm:w-auto px-5 py-3.5 rounded-lg border border-outline-variant/60 hover:border-primary/60 text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono transition-all duration-150 flex items-center justify-center gap-2" id="cvModalOpenBtn">
-<span class="material-symbols-outlined text-[18px]" data-icon="description">description</span>
-<span>Download CV</span>
-</button>
-</div>
-</div>
-<!-- Hero Visual Geometric Frame -->
-<div class="lg:col-span-5 relative flex justify-center">
-<div class="relative w-full max-w-[460px] aspect-square rounded-xl bg-surface-container-low border border-outline-variant/40 p-3 glow-photon group transition-all duration-300">
-<!-- Subtle blueprint corner markers -->
-<div class="absolute -top-1 -left-1 w-2.5 h-2.5 border-t-2 border-l-2 border-primary"></div>
-<div class="absolute -top-1 -right-1 w-2.5 h-2.5 border-t-2 border-r-2 border-primary"></div>
-<div class="absolute -bottom-1 -left-1 w-2.5 h-2.5 border-b-2 border-l-2 border-primary"></div>
-<div class="absolute -bottom-1 -right-1 w-2.5 h-2.5 border-b-2 border-r-2 border-primary"></div>
-<div class="w-full h-full rounded-lg overflow-hidden bg-surface-container-lowest relative">
-<!-- Abstract Creative Technologist Graphic -->
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="An intricate dark-mode 3D digital sculpture embodying electronic engineering and creative artificial intelligence. Floating multifaceted geometric polygons and sleek obsidian prisms are connected by glowing electric-blue circuit board traces and radiant photonic nodes against a deep graphite studio void. The atmosphere is monolithic, technically precise, and elegantly illuminated with restrained blue highlights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhMvGeZc1coijFottMyOfQv_GV5Pr4gv0zsxF32Xmw3AKa9l16pR2o7UVVPzE3eR_zBNUG5gZ3sJXKb_LLFwD8A30JWVnmbwh4Cf33r9D9oQzrL-YI_v6PkW1wtr2OzcadI5Pl6_ixNOKZlxJMRhfXAPupKjLEICfI6zBXjqvzSfY7hD30hiImCpU6CreMum354JJtRzy31kBr4EwtLE-Jv8QHdVw-CM4K-ZKp_gD3TMs40RNc9eriwA')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
-</div>
-<!-- Floating Metadata Telemetry Tags -->
-<div class="absolute bottom-5 left-5 right-5 flex flex-wrap gap-2">
-<span class="bg-surface-container-lowest/90 backdrop-blur border border-outline-variant/50 text-on-surface-variant px-2.5 py-1 rounded text-label-mono font-label-mono flex items-center gap-1.5 shadow-sm">
-<span class="h-1.5 w-1.5 rounded-full bg-primary"></span> Diploma in EEE (2024)
-                </span>
-<span class="bg-surface-container-lowest/90 backdrop-blur border border-outline-variant/50 text-on-surface-variant px-2.5 py-1 rounded text-label-mono font-label-mono">
-                  AI Workflows
-                </span>
-<span class="bg-surface-container-lowest/90 backdrop-blur border border-outline-variant/50 text-on-surface-variant px-2.5 py-1 rounded text-label-mono font-label-mono">
-                  Creative Design
-                </span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ABOUT ME SECTION -->
-<section class="py-20 md:py-28 border-b border-outline-variant/20 bg-surface-container-lowest" id="about">
-<div class="max-w-[1360px] mx-auto px-5 md:px-10 lg:px-20">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-<div>
-<div class="text-label-mono font-label-mono text-primary mb-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-[16px]" data-icon="terminal">terminal</span>
-              01 // CORE PHILOSOPHY
-            </div>
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface tracking-tight">
-              Curiosity Drives My Creativity.
-            </h2>
-</div>
-<p class="text-body-md font-body-md text-on-surface-variant max-w-md">
-            Bridging structured electrical fundamentals with dynamic visual aesthetics, generative AI synthesis, and human-centered design.
-          </p>
-</div>
-<!-- Bento Grid for 4 Core Pillars -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Pillar 1 -->
-<div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-6 hover:border-primary/50 transition-colors duration-200 flex flex-col justify-between">
-<div>
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-5 border border-outline-variant/30">
-<span class="material-symbols-outlined" data-icon="memory">memory</span>
-</div>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Engineering Rigor</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed mb-4">
-                Trained in electrical circuit principles, system schematics, and analytical problem-solving at Narayanganj Polytechnic Institute.
-              </p>
-</div>
-<span class="text-label-mono font-label-mono text-outline text-[11px]">CREDENTIAL: DIPLOMA EEE</span>
-</div>
-<!-- Pillar 2 -->
-<div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-6 hover:border-primary/50 transition-colors duration-200 flex flex-col justify-between">
-<div>
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-5 border border-outline-variant/30">
-<span class="material-symbols-outlined" data-icon="neurology">neurology</span>
-</div>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Generative Innovation</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed mb-4">
-                Hands-on practical exploration of AI visual synthesis, prompt architectures, and video prototyping pipelines.
-              </p>
-</div>
-<span class="text-label-mono font-label-mono text-outline text-[11px]">PIPELINES: AI VIDEO &amp; PROMPTS</span>
-</div>
-<!-- Pillar 3 -->
-<div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-6 hover:border-primary/50 transition-colors duration-200 flex flex-col justify-between">
-<div>
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-5 border border-outline-variant/30">
-<span class="material-symbols-outlined" data-icon="brush">brush</span>
-</div>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Visual Communication</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed mb-4">
-                Innate passion for freehand drawing, visual hierarchy, aesthetic balance, and compelling storytelling.
-              </p>
-</div>
-<span class="text-label-mono font-label-mono text-outline text-[11px]">DISCIPLINE: VISUAL ARTS &amp; MEDIA</span>
-</div>
-<!-- Pillar 4 -->
-<div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-6 hover:border-primary/50 transition-colors duration-200 flex flex-col justify-between">
-<div>
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-5 border border-outline-variant/30">
-<span class="material-symbols-outlined" data-icon="record_voice_over">record_voice_over</span>
-</div>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Growth Mindset</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed mb-4">
-                Curious self-starter active in market research, digital communication dynamics, and competitive Bengali poetry recitation.
-              </p>
-</div>
-<span class="text-label-mono font-label-mono text-outline text-[11px]">ATTRIBUTES: EXPRESSION &amp; AUDIENCE</span>
-</div>
-</div>
-<!-- Honest Emerging Professional Statement -->
-<div class="mt-10 p-6 rounded-xl bg-surface-container/60 border border-outline-variant/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="info">info</span>
-<p class="text-body-sm font-body-sm text-on-surface-variant">
-<strong class="text-on-surface font-semibold">Honest Professional Profile:</strong> As a recent 2024 diploma graduate, my work highlights genuine capabilities, academic projects, and self-directed creative experiments without artificial inflation.
-            </p>
-</div>
-<span class="inline-flex shrink-0 px-3 py-1 bg-surface-container-highest rounded text-label-mono font-label-mono text-on-surface text-[12px]">VERIFIED 2024 GRADUATE</span>
-</div>
-</div>
-</section>
-<!-- SKILLS SECTION -->
-<section class="py-20 md:py-28 border-b border-outline-variant/20 bg-surface" id="skills">
-<div class="max-w-[1360px] mx-auto px-5 md:px-10 lg:px-20">
-<div class="mb-12">
-<div class="text-label-mono font-label-mono text-primary mb-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-[16px]" data-icon="tune">tune</span>
-            02 // TOOLKIT &amp; CAPABILITIES
-          </div>
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface tracking-tight">
-            Categorized Competencies
-          </h2>
-<p class="text-body-md font-body-md text-on-surface-variant max-w-xl mt-2">
-            Real skills grounded in continuous practice, creative output, and structured research — presented without arbitrary percentage meters.
-          </p>
-</div>
-<!-- Skills Filter Tabs -->
-<div class="flex flex-wrap gap-2 mb-10" id="skillTabs">
-<button class="skill-tab-btn active px-4 py-2 rounded-lg text-label-mono font-label-mono text-on-primary bg-primary border border-primary transition-colors" data-target="all">
-            All Disciplines
-          </button>
-<button class="skill-tab-btn px-4 py-2 rounded-lg text-label-mono font-label-mono text-on-surface-variant bg-surface-container-low border border-outline-variant/40 hover:text-on-surface transition-colors" data-target="ai">
-            AI &amp; Digital Content
-          </button>
-<button class="skill-tab-btn px-4 py-2 rounded-lg text-label-mono font-label-mono text-on-surface-variant bg-surface-container-low border border-outline-variant/40 hover:text-on-surface transition-colors" data-target="creative">
-            Creative &amp; Visual
-          </button>
-<button class="skill-tab-btn px-4 py-2 rounded-lg text-label-mono font-label-mono text-on-surface-variant bg-surface-container-low border border-outline-variant/40 hover:text-on-surface transition-colors" data-target="marketing">
-            Marketing &amp; Business
-          </button>
-<button class="skill-tab-btn px-4 py-2 rounded-lg text-label-mono font-label-mono text-on-surface-variant bg-surface-container-low border border-outline-variant/40 hover:text-on-surface transition-colors" data-target="research">
-            Research &amp; Personal Dev
-          </button>
-</div>
-<!-- Skills Cards Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="skillsGrid">
-<!-- Skill Group 1 -->
-<div class="skill-card bg-surface-container-low border border-outline-variant/30 rounded-xl p-6" data-category="ai">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary" data-icon="smart_toy">smart_toy</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface">AI &amp; Digital Content</h3>
-</div>
-<ul class="space-y-3 mb-6">
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>AI Content Creation</span>
-<span class="text-label-mono font-label-mono text-primary text-[11px]">Primary</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>AI Visual Development</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Active</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>AI Video Production</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Workflow</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Content Ideation</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Core</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between">
-<span>Digital Content Planning</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Strategy</span>
-</li>
-</ul>
-<div class="flex flex-wrap gap-1.5 pt-2">
-<span class="px-2 py-0.5 rounded bg-surface-container border border-outline-variant/40 text-label-mono font-label-mono text-[10px] text-on-surface-variant">Midjourney</span>
-<span class="px-2 py-0.5 rounded bg-surface-container border border-outline-variant/40 text-label-mono font-label-mono text-[10px] text-on-surface-variant">Runway Gen-3</span>
-<span class="px-2 py-0.5 rounded bg-surface-container border border-outline-variant/40 text-label-mono font-label-mono text-[10px] text-on-surface-variant">Claude/GPT</span>
-</div>
-</div>
-<!-- Skill Group 2 -->
-<div class="skill-card bg-surface-container-low border border-outline-variant/30 rounded-xl p-6" data-category="creative">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary" data-icon="palette">palette</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface">Creative &amp; Visual</h3>
-</div>
-<ul class="space-y-3 mb-6">
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Freehand Drawing</span>
-<span class="text-label-mono font-label-mono text-primary text-[11px]">Innate</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Creative Thinking</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Core</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Visual Storytelling</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Narrative</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Design Exploration</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Figma</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between">
-<span>Content Presentation</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Editorial</span>
-</li>
-</ul>
-<div class="flex flex-wrap gap-1.5 pt-2">
-<span class="px-2 py-0.5 rounded bg-surface-container border border-outline-variant/40 text-label-mono font-label-mono text-[10px] text-on-surface-variant">Photoshop</span>
-<span class="px-2 py-0.5 rounded bg-surface-container border border-outline-variant/40 text-label-mono font-label-mono text-[10px] text-on-surface-variant">Canva</span>
-<span class="px-2 py-0.5 rounded bg-surface-container border border-outline-variant/40 text-label-mono font-label-mono text-[10px] text-on-surface-variant">Figma</span>
-</div>
-</div>
-<!-- Skill Group 3 -->
-<div class="skill-card bg-surface-container-low border border-outline-variant/30 rounded-xl p-6" data-category="marketing">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary" data-icon="query_stats">query_stats</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface">Marketing &amp; Business</h3>
-</div>
-<ul class="space-y-3 mb-6">
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Digital Marketing</span>
-<span class="text-label-mono font-label-mono text-primary text-[11px]">Foundations</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Sales Dynamics</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Interest</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Audience Research</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Analytics</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Product Presentation</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Showcase</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between">
-<span>Communication</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Direct</span>
-</li>
-</ul>
-<div class="flex flex-wrap gap-1.5 pt-2">
-<span class="px-2 py-0.5 rounded bg-surface-container border border-outline-variant/40 text-label-mono font-label-mono text-[10px] text-on-surface-variant">Meta Ads Basics</span>
-<span class="px-2 py-0.5 rounded bg-surface-container border border-outline-variant/40 text-label-mono font-label-mono text-[10px] text-on-surface-variant">Copywriting</span>
-<span class="px-2 py-0.5 rounded bg-surface-container border border-outline-variant/40 text-label-mono font-label-mono text-[10px] text-on-surface-variant">Social Specs</span>
-</div>
-</div>
-<!-- Skill Group 4 -->
-<div class="skill-card bg-surface-container-low border border-outline-variant/30 rounded-xl p-6" data-category="research">
-<div class="flex items-center gap-3 mb-4">
-<span class="material-symbols-outlined text-primary" data-icon="psychology">psychology</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface">Research &amp; Personal</h3>
-</div>
-<ul class="space-y-3 mb-6">
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Information Gathering</span>
-<span class="text-label-mono font-label-mono text-primary text-[11px]">Rigorous</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Research &amp; Analysis</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Systematic</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Problem-Solving</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">EEE Core</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between border-b border-outline-variant/20 pb-2">
-<span>Continuous Learning</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Adaptive</span>
-</li>
-<li class="text-body-sm font-body-sm text-on-surface flex items-center justify-between">
-<span>Poetry Recitation</span>
-<span class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">Vocal Arts</span>
-</li>
-</ul>
-<div class="flex flex-wrap gap-1.5 pt-2">
-<span class="px-2 py-0.5 rounded bg-surface-container border border-outline-variant/40 text-label-mono font-label-mono text-[10px] text-on-surface-variant">Notion</span>
-<span class="px-2 py-0.5 rounded bg-surface-container border border-outline-variant/40 text-label-mono font-label-mono text-[10px] text-on-surface-variant">Perplexity</span>
-<span class="px-2 py-0.5 rounded bg-surface-container border border-outline-variant/40 text-label-mono font-label-mono text-[10px] text-on-surface-variant">Public Speech</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- SELECTED PROJECTS SECTION -->
-<section class="py-20 md:py-28 border-b border-outline-variant/20 bg-surface-container-lowest" id="projects">
-<div class="max-w-[1360px] mx-auto px-5 md:px-10 lg:px-20">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
-<div>
-<div class="text-label-mono font-label-mono text-primary mb-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-[16px]" data-icon="deployed_code">deployed_code</span>
-              03 // FEATURED EXPLORATIONS
-            </div>
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface tracking-tight">
-              Selected Creative Explorations
-            </h2>
-</div>
-<div class="px-3.5 py-1.5 rounded bg-surface-container-high border border-outline-variant/40 text-label-mono font-label-mono text-on-surface-variant text-[12px] self-start md:self-end">
-            Sample project explorations &amp; conceptual workflows — readily adaptable for production.
-          </div>
-</div>
-<!-- 4 Interactive Cards Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- PROJECT 01 -->
-<div class="project-card cursor-pointer bg-surface-container-low border border-outline-variant/40 rounded-xl overflow-hidden hover:border-primary transition-all duration-300 group" data-category="AI Content Production" data-desc="An exploration of AI-assisted visual storytelling, cinematic scene development, and creative video production. Focuses on temporal consistency and prompt keyframing." data-output="Achieved high-coherence dynamic sequences simulating next-generation product commercials and narrative visual poems." data-title="AI Video Creation Exploration" data-tools="Runway Gen-3, Midjourney, Premiere Pro, ElevenLabs">
-<div class="h-60 w-full overflow-hidden bg-surface-container-high relative">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A cinematic dark futuristic frame from an AI generated video sequence displaying atmospheric blue lighting, volumetric laser haze, and cybernetic kinetic details. The scene captures an ultra high definition visual tone with deep obsidian contrast and subtle electric blue lens flares, depicting modern high-end synthetic filmmaking." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8X_TUHuCHqIspb3k5PmbZutIlXUMq2E4IodKH2kCwPuY4s6NCUWxUX7_pxJfxrA1RDwaT-aJuKxUpUsjgJlNw4RvuSuGpjCqLGiSU5rzUwph8kRRNTEjh4abxitlZLlzOEMCtuS0d_piJaoxxUB2B4JAbt1ZoHm-stWUZre9wu1dRmNeMwQtmweGl1tZ-r4HMORj-OvoquKPXLuZGGtISX2EkEDjsukh5exQ9WZ7ROSHU6aZMGMnK9w')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
-<div class="absolute top-4 left-4">
-<span class="px-2.5 py-1 rounded bg-surface-container-lowest/80 backdrop-blur text-primary text-label-mono font-label-mono text-[11px] border border-outline-variant/30">
-                  PROJECT 01
-                </span>
-</div>
-</div>
-<div class="p-6">
-<div class="text-label-mono font-label-mono text-primary text-[12px] mb-2 uppercase tracking-wide">
-                AI Content Production
-              </div>
-<h3 class="text-headline-md font-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">
-                AI Video Creation Workflow
-              </h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant mb-6 leading-relaxed">
-                An exploration of AI-assisted visual storytelling, cinematic scene development, and creative video production.
-              </p>
-<div class="flex items-center justify-between border-t border-outline-variant/30 pt-4">
-<div class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">
-                  Runway Gen-3, Midjourney, Premiere
-                </div>
-<span class="text-primary text-label-ui font-label-ui flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Inspect Concept <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
-</span>
-</div>
-</div>
-</div>
-<!-- PROJECT 02 -->
-<div class="project-card cursor-pointer bg-surface-container-low border border-outline-variant/40 rounded-xl overflow-hidden hover:border-primary transition-all duration-300 group" data-category="Creative Design" data-desc="A collection of visual concepts exploring composition, color, typography, and creative communication. Focuses on grid balance, negative space, and editorial layouts." data-output="Constructed modular editorial layouts with strong grid adherence and high visual clarity." data-title="Creative Visual Design Collection" data-tools="Figma, Adobe Photoshop, Typography systems">
-<div class="h-60 w-full overflow-hidden bg-surface-container-high relative">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="An editorial graphic design study showcasing sharp typographic grids, minimalist dark mode technical cards, and elegant geometric dividers. The artwork relies on a sophisticated deep indigo and charcoal palette, punctured by vibrant electric blue data tags and pristine monospaced numerals." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDaNNkhHSWkg5g_laURR_-xIQgfFqDzxugcUtOIJiDyM2eGKMKiUyKaeWrCU_XQS_x8OJfTQ4wCdP3oCvB6iR1imbazSZ9TZrYYFiQnr8aBQR6lu2vNWo7uArIlLs0_v3TxV_-FpnclYuZ0A65KBWiGbG2by8Cl5xHKSTxPt-2Iym_nmGpLIKYMcD9m6aRwGtrYAiVHjf-TpGed8cirOR3LpuHyFdP-YnGHMMXIjzfSmWw8VkTQcMIxDg')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
-<div class="absolute top-4 left-4">
-<span class="px-2.5 py-1 rounded bg-surface-container-lowest/80 backdrop-blur text-primary text-label-mono font-label-mono text-[11px] border border-outline-variant/30">
-                  PROJECT 02
-                </span>
-</div>
-</div>
-<div class="p-6">
-<div class="text-label-mono font-label-mono text-primary text-[12px] mb-2 uppercase tracking-wide">
-                Creative Design
-              </div>
-<h3 class="text-headline-md font-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">
-                Creative Visual Design System
-              </h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant mb-6 leading-relaxed">
-                A collection of visual concepts exploring composition, color, typography, and creative communication.
-              </p>
-<div class="flex items-center justify-between border-t border-outline-variant/30 pt-4">
-<div class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">
-                  Figma, Photoshop, Layout Grid
-                </div>
-<span class="text-primary text-label-ui font-label-ui flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Inspect Concept <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
-</span>
-</div>
-</div>
-</div>
-<!-- PROJECT 03 -->
-<div class="project-card cursor-pointer bg-surface-container-low border border-outline-variant/40 rounded-xl overflow-hidden hover:border-primary transition-all duration-300 group" data-category="Digital Marketing" data-desc="An exploration of promotional ideas, audience engagement, content planning, and digital communication tailored for high-growth tech firms." data-output="Synthesized end-to-end customer journey blueprints with targeted messaging copy and conversion funnel models." data-title="Digital Marketing &amp; Engagement Concept" data-tools="Meta Ads Manager concepts, Copywriting, Google Analytics basics">
-<div class="h-60 w-full overflow-hidden bg-surface-container-high relative">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A modern data dashboard conceptual visualization on a dark matte glass tablet screen. Neon blue and cyan data arcs and metrics indicate audience retention rates and social campaign milestones, floating in a clean architectural studio environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTXWDk4Mn2MQWe8q23QohQYaOuiE6JLPgK7bDpRWFAzYbB60pzkY2H2TboRoZelGHWnpsrCHAy1gYnfyzRbXYk1pVuOUFlf0kdZPWoyslrvlQzG5UcZnGZig9hdlR3Om4uKBOSkrQ6Yh8OW7YEbnWfP0g2AWGP1cPpup7rokUOaLdnluAElNJxOoh1Ry0o8cmjDLrhK8cjuDhXschSI1JgUAHUJI_R0JaTOrLPV8wjqEMmb0vhRc0TWA')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
-<div class="absolute top-4 left-4">
-<span class="px-2.5 py-1 rounded bg-surface-container-lowest/80 backdrop-blur text-primary text-label-mono font-label-mono text-[11px] border border-outline-variant/30">
-                  PROJECT 03
-                </span>
-</div>
-</div>
-<div class="p-6">
-<div class="text-label-mono font-label-mono text-primary text-[12px] mb-2 uppercase tracking-wide">
-                Digital Marketing
-              </div>
-<h3 class="text-headline-md font-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">
-                Digital Marketing Campaign Concept
-              </h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant mb-6 leading-relaxed">
-                An exploration of promotional ideas, audience engagement, content planning, and digital communication.
-              </p>
-<div class="flex items-center justify-between border-t border-outline-variant/30 pt-4">
-<div class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">
-                  Meta Ads Specs, Audience Research
-                </div>
-<span class="text-primary text-label-ui font-label-ui flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Inspect Concept <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
-</span>
-</div>
-</div>
-</div>
-<!-- PROJECT 04 -->
-<div class="project-card cursor-pointer bg-surface-container-low border border-outline-variant/40 rounded-xl overflow-hidden hover:border-primary transition-all duration-300 group" data-category="Artificial Intelligence" data-desc="Selected experiments exploring AI tools, visual generation, and new creative workflows blending procedural geometry with neural synthesis." data-output="Cataloged 100+ reusable prompt tokens with consistent aesthetic parameters and zero hallucination artifacts." data-title="AI Creative Experiments Lab" data-tools="Stable Diffusion, Prompt Engineering, LLM ideation">
-<div class="h-60 w-full overflow-hidden bg-surface-container-high relative">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="An experimental generative AI artistic study depicting abstract crystal lattice formations bathed in soft electric blue and twilight luminescence. Intricate mathematical details and clean dark background spaces evoke high end computational elegance." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDB672uN2SaS7RN--11r7VVeVhfws0CXNsxLfreoxbvJwzw8CGJ_CmKpZOpoCua0UlyZTUEuJ_jUmCbfuqv5o_urAbGLVJWf_ZwrzSAFLt__4IGtzzBRswevSFAvDucCaZ-uqlvnMgOuIXV7OBrM-BELyL0wmReTCiEsNlqU6poWLj_kP6tdrswF4dwj-wXgxNvTddQaN7X5rzWCVTLGPPPBPj51OXJgOCYtZV8Fuj7eFiOlEiFYiLzIQ')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
-<div class="absolute top-4 left-4">
-<span class="px-2.5 py-1 rounded bg-surface-container-lowest/80 backdrop-blur text-primary text-label-mono font-label-mono text-[11px] border border-outline-variant/30">
-                  PROJECT 04
-                </span>
-</div>
-</div>
-<div class="p-6">
-<div class="text-label-mono font-label-mono text-primary text-[12px] mb-2 uppercase tracking-wide">
-                Artificial Intelligence
-              </div>
-<h3 class="text-headline-md font-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">
-                AI Creative Experiments Lab
-              </h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant mb-6 leading-relaxed">
-                Selected experiments exploring AI tools, visual generation, and new creative workflows.
-              </p>
-<div class="flex items-center justify-between border-t border-outline-variant/30 pt-4">
-<div class="text-label-mono font-label-mono text-on-surface-variant text-[11px]">
-                  Stable Diffusion, Prompt Systems
-                </div>
-<span class="text-primary text-label-ui font-label-ui flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Inspect Concept <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- EDUCATION SECTION -->
-<section class="py-20 md:py-28 border-b border-outline-variant/20 bg-surface" id="education">
-<div class="max-w-[1360px] mx-auto px-5 md:px-10 lg:px-20">
-<div class="mb-16">
-<div class="text-label-mono font-label-mono text-primary mb-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-[16px]" data-icon="school">school</span>
-            04 // ACADEMIC FOUNDATIONS
-          </div>
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface tracking-tight">
-            Education &amp; Qualifications
-          </h2>
-<p class="text-body-md font-body-md text-on-surface-variant max-w-xl mt-2">
-            Strictly authentic academic milestones preserving verified technical education.
-          </p>
-</div>
-<!-- Chronological Timeline -->
-<div class="relative pl-6 md:pl-8 border-l border-outline-variant/40 space-y-12 max-w-3xl">
-<!-- Item 1: Diploma in EEE -->
-<div class="relative group">
-<div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-background group-hover:scale-125 transition-transform"></div>
-<div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-6 md:p-8 hover:border-primary/50 transition-colors">
-<div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-<span class="px-2.5 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-label-mono font-label-mono text-[11px]">
-                  2020 – 2024 (COMPLETED)
-                </span>
-<span class="text-label-mono font-label-mono text-outline text-[12px]">PASSED: 2024</span>
-</div>
-<h3 class="text-headline-md font-headline-md text-on-surface mb-1">
-                Diploma in Engineering — Electrical Technology (EEE)
-              </h3>
-<div class="text-label-ui font-label-ui text-primary mb-4">
-                Narayanganj Polytechnic Institute
-              </div>
-<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed mb-6">
-                Comprehensive 4-year engineering curriculum focused on foundational electrical engineering principles, power distribution, DC/AC circuits, electronics instrumentation, and structured troubleshooting.
-              </p>
-<!-- Academic Modules -->
-<div class="border-t border-outline-variant/20 pt-4 grid grid-cols-2 sm:grid-cols-3 gap-3">
-<div class="text-[12px] font-label-mono text-on-surface-variant">
-<span class="text-primary font-bold">#</span> Circuit Analysis
-                </div>
-<div class="text-[12px] font-label-mono text-on-surface-variant">
-<span class="text-primary font-bold">#</span> Electrical Machines
-                </div>
-<div class="text-[12px] font-label-mono text-on-surface-variant">
-<span class="text-primary font-bold">#</span> Microcontroller Basics
-                </div>
-<div class="text-[12px] font-label-mono text-on-surface-variant">
-<span class="text-primary font-bold">#</span> Industrial Electronics
-                </div>
-<div class="text-[12px] font-label-mono text-on-surface-variant">
-<span class="text-primary font-bold">#</span> Engineering Drawing
-                </div>
-<div class="text-[12px] font-label-mono text-on-surface-variant">
-<span class="text-primary font-bold">#</span> Systems Safety
-                </div>
-</div>
-</div>
-</div>
-<!-- Item 2: SSC -->
-<div class="relative group">
-<div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-outline-variant border-4 border-background group-hover:bg-primary transition-colors"></div>
-<div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-6 md:p-8 hover:border-outline transition-colors">
-<div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant border border-outline-variant/30 text-label-mono font-label-mono text-[11px]">
-                  SECONDARY LEVEL
-                </span>
-<span class="text-label-mono font-label-mono text-primary font-semibold text-[12px]">GPA 5.00 (GOLDEN / PERFECT)</span>
-</div>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-1">
-                Secondary School Certificate (SSC)
-              </h3>
-<div class="text-label-ui font-label-ui text-on-surface-variant mb-4">
-                Science Group • Narayanganj District Board
-              </div>
-<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-                Demonstrated high academic excellence achieving the highest possible grade point average (GPA 5.00) in scientific and mathematics coursework.
-              </p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- BEYOND THE CLASSROOM SECTION -->
-<section class="py-20 md:py-28 border-b border-outline-variant/20 bg-surface-container-lowest" id="beyond">
-<div class="max-w-[1360px] mx-auto px-5 md:px-10 lg:px-20">
-<div class="mb-16">
-<div class="text-label-mono font-label-mono text-primary mb-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-[16px]" data-icon="explore">explore</span>
-            05 // EXTRACURRICULAR DYNAMICS
-          </div>
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface tracking-tight">
-            Beyond the Classroom
-          </h2>
-<p class="text-body-md font-body-md text-on-surface-variant max-w-xl mt-2">
-            Interests and passions that shape my perspective, creative instincts, and communication poise.
-          </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Extracurricular 1 -->
-<div class="bg-surface-container-low border border-outline-variant/30 rounded-xl p-6 hover:border-primary/40 transition-colors">
-<span class="material-symbols-outlined text-primary text-[28px] mb-4" data-icon="draw">draw</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Drawing &amp; Creative Arts</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-              Practicing visual sketching and composition fundamentals. Grounding digital interfaces with organic human hand-drawn instincts.
-            </p>
-</div>
-<!-- Extracurricular 2 -->
-<div class="bg-surface-container-low border border-outline-variant/30 rounded-xl p-6 hover:border-primary/40 transition-colors">
-<span class="material-symbols-outlined text-primary text-[28px] mb-4" data-icon="manage_search">manage_search</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Researching &amp; Synthesis</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-              Deep-diving into emerging AI trends, developer tools, and algorithmic workflows to isolate actionable opportunities.
-            </p>
-</div>
-<!-- Extracurricular 3 -->
-<div class="bg-surface-container-low border border-outline-variant/30 rounded-xl p-6 hover:border-primary/40 transition-colors">
-<span class="material-symbols-outlined text-primary text-[28px] mb-4" data-icon="movie_filter">movie_filter</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">AI Content Creation</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-              Consistently stress-testing novel generative frameworks, synthesizing visual prompts, and refining audio-visual cohesion.
-            </p>
-</div>
-<!-- Extracurricular 4 -->
-<div class="bg-surface-container-low border border-outline-variant/30 rounded-xl p-6 hover:border-primary/40 transition-colors">
-<span class="material-symbols-outlined text-primary text-[28px] mb-4" data-icon="storefront">storefront</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Sales &amp; Marketing</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-              Understanding consumer psychology, narrative framing, value propositions, and effective communication channels.
-            </p>
-</div>
-<!-- Extracurricular 5 -->
-<div class="bg-surface-container-low border border-outline-variant/30 rounded-xl p-6 hover:border-primary/40 transition-colors md:col-span-2 lg:col-span-2">
-<span class="material-symbols-outlined text-primary text-[28px] mb-4" data-icon="mic_external_on">mic_external_on</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Poetry Recitation &amp; Public Expression</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-              Passionate practitioner of Bangla poetry recitation. Cultivates precise vocal modulation, rhythm awareness, stage presence, and confidence when presenting complex concepts to large audiences.
-            </p>
-</div>
-</div>
-</div>
-</section>
-<!-- WHY WORK WITH ME SECTION -->
-<section class="py-20 md:py-28 border-b border-outline-variant/20 bg-surface">
-<div class="max-w-[1360px] mx-auto px-5 md:px-10 lg:px-20">
-<div class="text-center max-w-2xl mx-auto mb-16">
-<div class="text-label-mono font-label-mono text-primary mb-2 flex items-center justify-center gap-2">
-<span class="material-symbols-outlined text-[16px]" data-icon="handshake">handshake</span>
-            06 // VALUE PROPOSITION
-          </div>
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface tracking-tight">
-            Why Work With Me
-          </h2>
-<p class="text-body-md font-body-md text-on-surface-variant mt-3">
-            Core attributes I bring to teams at Maktech IT and forward-thinking engineering studios.
-          </p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/40 flex flex-col justify-start">
-<span class="material-symbols-outlined text-primary mb-3" data-icon="lightbulb">lightbulb</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Curious &amp; Eager to Learn</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant">Relentlessly exploring new tools, systems, and creative methodologies without fear of early hurdles.</p>
-</div>
-<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/40 flex flex-col justify-start">
-<span class="material-symbols-outlined text-primary mb-3" data-icon="hub">hub</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Bridge of Technical &amp; Creative</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant">Rooted in mathematical electrical engineering logic with refined visual sensibilities.</p>
-</div>
-<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/40 flex flex-col justify-start">
-<span class="material-symbols-outlined text-primary mb-3" data-icon="auto_awesome">auto_awesome</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">AI-Forward Thinking</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant">Early adopter of generative AI workflows for production efficiency and visual storytelling.</p>
-</div>
-<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/40 flex flex-col justify-start">
-<span class="material-symbols-outlined text-primary mb-3" data-icon="psychology_alt">psychology_alt</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Receptive to Mentorship</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant">Eager to take critique from senior engineers, directors, and collaborative team leads.</p>
-</div>
-<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/40 flex flex-col justify-start">
-<span class="material-symbols-outlined text-primary mb-3" data-icon="check_circle">check_circle</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Detail-Oriented Discipline</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant">Consistent respect for circuit precision, editorial typography, and grid alignment.</p>
-</div>
-<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/40 flex flex-col justify-start">
-<span class="material-symbols-outlined text-primary mb-3" data-icon="forum">forum</span>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Authentic Communicator</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant">Honest, reliable communication rooted in public presentation and poetry recitation discipline.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- CONTACT SECTION -->
-<section class="py-20 md:py-28 bg-surface-container-lowest" id="contact">
-<div class="max-w-[1360px] mx-auto px-5 md:px-10 lg:px-20">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-<!-- Contact Left Info -->
-<div class="lg:col-span-5 flex flex-col justify-between">
-<div>
-<div class="text-label-mono font-label-mono text-primary mb-2 flex items-center gap-2">
-<span class="material-symbols-outlined text-[16px]" data-icon="send">send</span>
-                07 // INITIATE DIALOGUE
-              </div>
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface tracking-tight mb-4">
-                Have a Project or Opportunity in Mind?
-              </h2>
-<p class="text-body-md font-body-md text-on-surface-variant mb-8 leading-relaxed">
-                I'm always interested in connecting with people, exploring creative ideas, and learning about new opportunities.
-              </p>
-<!-- Contact Cards -->
-<div class="space-y-4 mb-8">
-<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-low border border-outline-variant/40">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined" data-icon="mail">mail</span>
-</div>
-<div>
-<div class="text-label-mono font-label-mono text-outline text-[11px]">DIRECT EMAIL</div>
-<a class="text-body-sm font-body-sm text-on-surface hover:text-primary transition-colors font-semibold" href="mailto:contact@mizanurrahman.dev">
-                      contact@mizanurrahman.dev
-                    </a>
-</div>
-</div>
-<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-low border border-outline-variant/40">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined" data-icon="link">link</span>
-</div>
-<div>
-<div class="text-label-mono font-label-mono text-outline text-[11px]">LINKEDIN PROFILE</div>
-<a class="text-body-sm font-body-sm text-on-surface hover:text-primary transition-colors font-semibold" href="https://linkedin.com/in/mizanur-rahman-profile" rel="noopener noreferrer" target="_blank">
-                      linkedin.com/in/mizanur-rahman-profile
-                    </a>
-</div>
-</div>
-<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-low border border-outline-variant/40">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
-</div>
-<div>
-<div class="text-label-mono font-label-mono text-outline text-[11px]">LOCATION BASE</div>
-<div class="text-body-sm font-body-sm text-on-surface font-semibold">
-                      Narayanganj / Dhaka, Bangladesh
-                    </div>
-</div>
-</div>
-</div>
-</div>
-<!-- Netlify Deployment Specs Button -->
-<div>
-<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-outline-variant/60 hover:border-primary/60 text-label-mono font-label-mono text-on-surface-variant hover:text-on-surface text-[12px] transition-colors" id="openSpecsBtn">
-<span class="material-symbols-outlined text-[16px]" data-icon="cloud_sync">cloud_sync</span>
-<span>Netlify Deployment Guide &amp; Specs</span>
-</button>
-</div>
-</div>
-<!-- Contact Form (Netlify Form Ready) -->
-<div class="lg:col-span-7">
-<div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-8 shadow-sm">
-<form class="space-y-6" data-netlify="true" id="portfolioContactForm" method="POST" name="contact">
-<!-- Netlify hidden input for bots -->
-<input name="form-name" type="hidden" value="contact"/>
-<!-- Success Banner (Initially Hidden) -->
-<div class="hidden p-4 rounded-lg bg-primary-container/20 border border-primary text-on-surface text-body-sm" id="formSuccessMessage">
-<div class="flex items-center gap-2 text-primary font-semibold mb-1">
-<span class="material-symbols-outlined text-[20px]" data-icon="check_circle">check_circle</span>
-                    Message Transmitted Successfully
-                  </div>
-                  Thank you! Your note has been dispatched. I will review and respond promptly.
-                </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div>
-<label class="block text-label-mono font-label-mono text-on-surface-variant text-[12px] mb-2 uppercase" for="fullName">
-                      Full Name *
-                    </label>
-<input class="w-full bg-surface-container border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface text-body-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="fullName" name="fullName" placeholder="Your name" required="" type="text"/>
-</div>
-<div>
-<label class="block text-label-mono font-label-mono text-on-surface-variant text-[12px] mb-2 uppercase" for="email">
-                      Email Address *
-                    </label>
-<input class="w-full bg-surface-container border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface text-body-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="email" name="email" placeholder="your.email@example.com" required="" type="email"/>
-</div>
-</div>
-<div>
-<label class="block text-label-mono font-label-mono text-on-surface-variant text-[12px] mb-2 uppercase" for="subject">
-                    Subject / Project Context
-                  </label>
-<input class="w-full bg-surface-container border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface text-body-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="subject" name="subject" placeholder="e.g. Maktech IT Opportunity or Collaborative Idea" type="text"/>
-</div>
-<div>
-<label class="block text-label-mono font-label-mono text-on-surface-variant text-[12px] mb-2 uppercase" for="message">
-                    Message *
-                  </label>
-<textarea class="w-full bg-surface-container border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface text-body-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors resize-none" id="message" name="message" placeholder="Tell me about your initiative, timeline, or thoughts..." required="" rows="5"></textarea>
-</div>
-<button class="w-full py-4 rounded-lg bg-primary text-on-primary font-label-ui text-label-ui hover:bg-primary-fixed-dim transition-all duration-150 flex items-center justify-center gap-2 shadow-sm active:scale-[0.99]" id="submitBtn" type="submit">
-<span id="btnText">Transmit Message</span>
-<span class="material-symbols-outlined text-[18px]" data-icon="send">send</span>
-</button>
-</form>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- FOOTER (Shared Component Anchor) -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant/30 docked full-width bottom">
-<div class="w-full px-5 md:px-10 lg:px-20 max-w-[1360px] mx-auto py-12 flex flex-col md:flex-row justify-between items-center gap-6">
-<!-- Brand & Copyright -->
-<div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-<a class="text-headline-sm font-headline-sm font-bold text-on-surface tracking-tight" href="#">
-          MR
+<a class="px-7 py-3.5 rounded-[10px] bg-transparent text-on-surface font-headline-sm text-body-md font-medium border border-outline-variant hover:border-secondary hover:text-secondary hover:bg-surface-container-high/40 transition-all duration-300" href="#contact">
+          Contact
         </a>
-<span class="hidden sm:inline text-outline-variant">|</span>
-<p class="text-body-sm font-body-sm text-on-surface-variant">
-          © 2025 Mizanur Rahman. All rights reserved. Built with precision &amp; deployed via Netlify.
+</div>
+<!-- Cinematic Showreel Frame (16:9) -->
+<div class="w-full relative rounded-[14px] overflow-hidden border border-outline-variant/60 bg-surface-container-lowest shadow-2xl group cursor-pointer">
+<div class="aspect-video w-full relative flex items-center justify-center">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container/60 to-surface-container-lowest/30 z-10"></div>
+<!-- Poster background visual -->
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-60" data-alt="Cinematic 16:9 film studio master frame showing a high-tech editing bay illuminated by ambient magenta and warm gold studio lights, subtle anamorphic lens flare across the dark lens, 35mm grain, minimalist production suite in Dhaka" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7T1pk_QGPLW6ZQIaA0qlQ3H9yNo4wPet9jmBMm8rxinpET9Gvf2XpCuBlWUbxnvkdYB3Nt1dpVKj9OryG9t4HpB1pwQo1HcVUvgTWe5QtoHh-Ph4y6a9Ny6xpeUpTTpUz4Plm2vzLvECnbcxctPk9W_dkrrOSYk3JCxyu15aEqVmcTlu6rT1C9idYoEStaz-o7ruYEyaKzSBQd9qVmvSJyKbjaHb8GgQVDuF8bRIBX3f8d9AmX24D')"></div>
+<!-- Center Play Trigger Overlay -->
+<div class="relative z-20 flex flex-col items-center gap-3">
+<div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-surface-container-lowest/80 border border-primary-container/40 flex items-center justify-center shadow-[0_0_28px_rgba(224,53,159,0.4)] group-hover:border-primary-container group-hover:scale-110 transition-all duration-300">
+<span class="material-symbols-outlined text-primary-container text-3xl md:text-4xl translate-x-0.5" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest/80 border border-outline-variant/40 backdrop-blur-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-uppercase text-label-uppercase text-on-surface uppercase tracking-widest text-[11px]">Play Showreel · 2026 Reel</span>
+</div>
+</div>
+<!-- Bottom Timecode Decoration -->
+<div class="absolute bottom-4 left-5 right-5 z-20 flex items-center justify-between font-label-uppercase text-label-uppercase text-outline tracking-widest text-[10px]">
+<span class="">LEAH.STUDIO // 4K 24FPS</span>
+<span class="">00:00:00:00 — MASTER</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 72px Vertical Spacer -->
+<div class="h-[72px]"></div>
+<!-- ABOUT SECTION -->
+<section class="w-full relative" id="about">
+<div class="flex items-center gap-2 mb-4">
+<span class="font-label-uppercase text-label-uppercase text-primary-container uppercase tracking-[0.2em]">About</span>
+<span class="h-[1px] w-12 bg-primary-container/30"></span>
+</div>
+<!-- Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 mb-8">
+<!-- Left Column -->
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg tracking-tight mb-6">
+            Leah Ruth Urmi Mirdan. <span class="text-secondary italic font-serif">Engineer &amp; storyteller.</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6 font-light">
+            I create AI-powered TV commercials (TVCs), cinematic advertisements, product videos, AI short films, 2D &amp; 3D animations, character designs, and social media content. My workflow covers concept development, scriptwriting, storyboarding, prompt engineering, AI image generation, text-to-video, image-to-video, and professional video editing. Beyond creative production, my portfolio also showcases Electrical &amp; Electronic Engineering projects, technical skills, professional certifications, and experience in Fiverr freelancing, sales, client communication, and project coordination.
+          </p>
+</div>
+<!-- Pill-style Skill Tags -->
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">AI Content Creation</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">Prompt Engineering</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">AI Filmmaking</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">AI Video Generation</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">Visual Storytelling</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">Creative Direction</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">Video Editing</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">Electrical Engineering</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">Circuit Analysis</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">Technical Problem Solving</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">Engineering Projects</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">Fiverr Freelancing</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">Sales Negotiation</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">Client Communication</span>
+<span class="px-3 py-1 rounded-full text-xs font-body-sm bg-[#222222] border border-outline-variant/40 text-on-surface hover:border-primary-container/60 transition-colors">Project Management</span>
+</div>
+</div>
+<!-- Right Column -->
+<div class="lg:col-span-5 flex flex-col gap-5">
+<!-- Portrait Frame -->
+<div class="relative rounded-[14px] overflow-hidden border border-white/10 shadow-[0_0_24px_rgba(224,53,159,0.18)] bg-surface-container-low aspect-square">
+<img alt="Leah Ruth Urmi Mirdan" class="w-full h-full object-cover grayscale-[15%] hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFOuOsZmS7TDsj-GIDcKuPHegdygb23N52qseo7NmsgLh5hy6xU2vJA-Xlb3rbYKdCw3qQa4p2L8G4gpOfRX9f25As6yA2vNiMChbOH1scfCzwPfyjdLR1RS240GESilWnn6k01sFZU4M34RD03N2e3u5NHP6m040LUiX5diNNeCGVhnMX4aiysg160L5H3Rey2aTPGI8mT35llYe443St1H3V5a1gpybBOGwKkWj52JNJytwSttqdV-rrj601lrgvsg">
+<div class="absolute inset-0 bg-gradient-to-t from-[#111111]/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-4 right-4 flex justify-between items-end">
+<span class="font-headline-sm text-body-sm font-medium text-on-surface">Dhaka, Bangladesh</span>
+<span class="font-label-uppercase text-label-uppercase text-secondary text-[10px] tracking-widest uppercase">Engineer · Creator</span>
+</div>
+</div>
+<!-- Education Card with Timeline -->
+<div class="p-5 rounded-[14px] bg-[#1C1C1C] border border-white/10">
+<h3 class="font-headline-sm text-body-md text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">school</span>
+            Academic Timeline
+          </h3>
+<div class="relative pl-5 border-l border-primary-container/40 space-y-3.5">
+<div class="relative">
+<span class="absolute -left-[25px] top-1 w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<p class="font-label-uppercase text-[11px] text-secondary tracking-widest uppercase">2026</p>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">BSc in Electrical &amp; Electronic Engineering (EEE)</p>
+</div>
+<div class="relative">
+<span class="absolute -left-[25px] top-1 w-2.5 h-2.5 rounded-full bg-outline-variant"></span>
+<p class="font-label-uppercase text-[11px] text-on-surface-variant tracking-widest uppercase">2022–2023</p>
+<p class="font-body-sm text-body-sm text-on-surface">Diploma in Electrical Engineering</p>
+</div>
+<div class="relative">
+<span class="absolute -left-[25px] top-1 w-2.5 h-2.5 rounded-full bg-outline-variant"></span>
+<p class="font-label-uppercase text-[11px] text-on-surface-variant tracking-widest uppercase">2018</p>
+<p class="font-body-sm text-body-sm text-on-surface">Secondary School Certificate (SSC)</p>
+</div>
+</div>
+</div>
+<!-- Languages & Proficiency Card -->
+<div class="p-5 rounded-[14px] bg-[#1C1C1C] border border-white/10 flex items-center justify-between">
+<div>
+<p class="font-label-uppercase text-[10px] text-outline tracking-widest uppercase mb-1">Languages</p>
+<p class="font-headline-sm text-body-md text-on-surface font-medium">Bangla · English · Hindi</p>
+</div>
+<div class="text-right pl-3 border-l border-white/10">
+<p class="font-label-gold text-label-gold text-secondary">IELTS 6.0</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">No band below 6</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Full-Width Row of 3 Highlight Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="p-6 rounded-[14px] bg-[#1C1C1C] border border-white/10 flex items-center gap-5 hover:border-primary-container/40 transition-colors">
+<span class="font-stat-counter text-stat-counter text-secondary">3</span>
+<div>
+<p class="font-headline-sm text-body-md text-on-surface font-semibold">Professional domains</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Engineering, generative AI film &amp; commercial client sales.</p>
+</div>
+</div>
+<div class="p-6 rounded-[14px] bg-[#1C1C1C] border border-white/10 flex flex-col justify-center hover:border-primary-container/40 transition-colors">
+<div class="flex items-center gap-2 mb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<p class="font-headline-sm text-body-md text-on-surface font-semibold">AI Content Production</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Commercial TVCs, character pipelines, and next-generation film storytelling.</p>
+</div>
+<div class="p-6 rounded-[14px] bg-[#1C1C1C] border border-white/10 flex flex-col justify-center hover:border-primary-container/40 transition-colors">
+<div class="flex items-center gap-2 mb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<p class="font-headline-sm text-body-md text-on-surface font-semibold">Engineering &amp; Sales</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Proven track record in circuit systems, Fiverr delivery, and negotiations.</p>
+</div>
+</div>
+</section>
+<!-- 72px Vertical Spacer -->
+<div class="h-[72px]"></div>
+<!-- SELECTED COLLABORATIONS -->
+<section class="w-full relative">
+<div class="flex items-center gap-2 mb-4">
+<span class="font-label-uppercase text-label-uppercase text-primary-container uppercase tracking-[0.2em]">Collaborations</span>
+<span class="h-[1px] w-12 bg-primary-container/30"></span>
+</div>
+<div class="rounded-[14px] bg-[#1C1C1C] border border-white/10 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 hover:border-primary-container/30 transition-all duration-300">
+<div class="flex flex-col md:max-w-md text-center md:text-left">
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mb-1">Cooperated with PRAN</h3>
+<p class="font-body-md text-body-md text-secondary">Recognition: Animation Content</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 font-light">
+          Developed high-impact animated sequences and promotional story elements bridging consumer FMCG snack products with futuristic visual aesthetics.
         </p>
 </div>
-<!-- Links Cluster -->
-<div class="flex flex-wrap items-center justify-center gap-6 text-label-mono font-label-mono text-[12px]">
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-150" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-150" href="https://github.com" rel="noopener noreferrer" target="_blank">GitHub</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-150" href="https://researchgate.net" rel="noopener noreferrer" target="_blank">ResearchGate</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-150" href="https://behance.net" rel="noopener noreferrer" target="_blank">Behance</a>
-<button class="text-primary hover:underline transition-colors duration-150" id="footerSpecsBtn">Deployment Specs</button>
+<!-- PRAN Brand Wordmark Badge -->
+<div class="px-8 py-5 rounded-[12px] bg-[#111111] border border-white/15 flex items-center justify-center gap-3 shadow-inner">
+<span class="material-symbols-outlined text-primary-container text-2xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-sm tracking-widest text-on-surface font-bold">PRAN</span>
+<span class="font-label-uppercase text-[9px] tracking-[0.2em] text-outline uppercase">Partner Recognition</span>
 </div>
 </div>
-</footer>
-<!-- MODAL: PROJECT QUICK-VIEW -->
-<div class="fixed inset-0 z-50 hidden bg-background/80 backdrop-blur-sm flex items-center justify-center p-4" id="projectModal">
-<div class="bg-surface-container border border-outline-variant rounded-xl max-w-xl w-full p-6 md:p-8 shadow-2xl relative">
-<button class="absolute top-5 right-5 text-on-surface-variant hover:text-on-surface p-1 rounded-lg" id="closeProjectModal">
-<span class="material-symbols-outlined" data-icon="close">close</span>
-</button>
-<span class="px-2.5 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-label-mono font-label-mono text-[11px] mb-3 inline-block" id="modalCategory">
-        CATEGORY
-      </span>
-<h3 class="text-headline-md font-headline-md text-on-surface mb-2" id="modalTitle">Project Title</h3>
-<div class="mb-4">
-<span class="text-label-mono font-label-mono text-outline text-[11px]">TOOLS &amp; WORKFLOWS:</span>
-<p class="text-label-mono font-label-mono text-primary text-[12px]" id="modalTools"></p>
 </div>
-<div class="space-y-4 mb-6">
+</section>
+<!-- 72px Vertical Spacer -->
+<div class="h-[72px]"></div>
+<!-- MY PORTFOLIO (WORKS) -->
+<section class="w-full relative" id="works">
+<div class="flex items-center gap-2 mb-3">
+<span class="font-label-uppercase text-label-uppercase text-primary-container uppercase tracking-[0.2em]">My Portfolio</span>
+<span class="h-[1px] w-12 bg-primary-container/30"></span>
+</div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg tracking-tight">Selected Works</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Curated commercials, AI animation, and narrative concepts</p>
+</div>
+<!-- Filter Pills (Horizontal Scroll on Mobile) -->
+<div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none" id="portfolio-filters">
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full text-xs font-label-uppercase tracking-wider uppercase bg-primary-container text-on-surface font-semibold shadow-[0_0_14px_rgba(224,53,159,0.3)] transition-all">All</button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full text-xs font-label-uppercase tracking-wider uppercase bg-[#1C1C1C] text-on-surface-variant border border-white/10 hover:text-on-surface hover:border-white/25 transition-all">AI Films &amp; Cinematic Stories</button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full text-xs font-label-uppercase tracking-wider uppercase bg-[#1C1C1C] text-on-surface-variant border border-white/10 hover:text-on-surface hover:border-white/25 transition-all">AI TVCs &amp; Product Commercials</button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full text-xs font-label-uppercase tracking-wider uppercase bg-[#1C1C1C] text-on-surface-variant border border-white/10 hover:text-on-surface hover:border-white/25 transition-all">2D &amp; 3D Cartoon Animation</button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full text-xs font-label-uppercase tracking-wider uppercase bg-[#1C1C1C] text-on-surface-variant border border-white/10 hover:text-on-surface hover:border-white/25 transition-all">AI Product Visualization</button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full text-xs font-label-uppercase tracking-wider uppercase bg-[#1C1C1C] text-on-surface-variant border border-white/10 hover:text-on-surface hover:border-white/25 transition-all">AI Characters &amp; Visual Development</button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full text-xs font-label-uppercase tracking-wider uppercase bg-[#1C1C1C] text-on-surface-variant border border-white/10 hover:text-on-surface hover:border-white/25 transition-all">Storyboards &amp; Creative Concepts</button>
+</div>
+<!-- 2x2 Project Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Project 1 -->
+<article class="rounded-[14px] bg-[#1C1C1C] border border-white/10 overflow-hidden flex flex-col group hover:border-primary-container/40 hover:shadow-[0_0_24px_rgba(224,53,159,0.18)] transition-all duration-300">
+<!-- 16:10 Video Poster Container -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Cinematic frame of a futuristic metro train interior speeding through a luminous tunnel, warm golden ambient lights hitting a sleek snack food package, dramatic shallow depth of field, anamorphic style with magenta streaks, hyper-realistic details" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCcPT3sNEHVEspLFR36mVviCjbXH1RTYe2l7hbZRJptW_lC_rmyune2Q16u37U-x9IAU842Pjzi0m6TwdMWE47JLVw81kPkltj0wydkl2p9HiHGstVvkQGUkl-OQxIMwJNY0YV15qtyglyYFVVepvG-fxFtvU2X8BUhGtsfpzvLSzoE0CL-9juGf9nO220CE16Jy3q2fBv8Ah9WkMXyWCjUUFHul9N9znZDKRStD9LJCP19CbIYP9s6')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1C1C1C] via-[#1C1C1C]/20 to-transparent"></div>
+<!-- Duration Badge -->
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-surface-container-lowest/80 border border-white/10 font-label-uppercase text-[10px] tracking-wider text-secondary backdrop-blur-sm">
+            15s
+          </div>
+<!-- Hover Play Overlay -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-surface-container-lowest/40 backdrop-blur-[2px]">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-surface flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Card Details -->
+<div class="p-6 flex flex-col flex-1 justify-between">
 <div>
-<h4 class="text-label-ui font-label-ui text-on-surface text-sm mb-1">Concept Methodology</h4>
-<p class="text-body-sm font-body-sm text-on-surface-variant" id="modalDesc"></p>
+<h3 class="font-headline-sm text-title-editorial text-on-surface font-semibold mb-2 group-hover:text-primary-container transition-colors">
+              PRAN Dal — A Journey Beyond Time
+            </h3>
+<p class="font-body-md text-body-sm text-on-surface-variant line-clamp-2 font-light">
+              A cinematic AI snack commercial set in a modern metro train, with imaginative transitions and playful characters.
+            </p>
 </div>
-<div>
-<h4 class="text-label-ui font-label-ui text-on-surface text-sm mb-1">Simulated Output</h4>
-<p class="text-body-sm font-body-sm text-on-surface-variant" id="modalOutput"></p>
-</div>
-</div>
-<div class="pt-4 border-t border-outline-variant/30 flex justify-end">
-<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest text-label-ui font-label-ui transition-colors" id="closeProjectModalBtn">
-          Close Overview
-        </button>
-</div>
-</div>
-</div>
-<!-- MODAL: DOWNLOAD CV REQUEST -->
-<div class="fixed inset-0 z-50 hidden bg-background/80 backdrop-blur-sm flex items-center justify-center p-4" id="cvModal">
-<div class="bg-surface-container border border-outline-variant rounded-xl max-w-md w-full p-6 md:p-8 shadow-2xl relative">
-<button class="absolute top-5 right-5 text-on-surface-variant hover:text-on-surface p-1 rounded-lg" id="closeCvModal">
-<span class="material-symbols-outlined" data-icon="close">close</span>
-</button>
-<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
-<span class="material-symbols-outlined text-[28px]" data-icon="badge">badge</span>
-</div>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Curriculum Vitae Access</h3>
-<p class="text-body-sm font-body-sm text-on-surface-variant mb-6 leading-relaxed">
-        My comprehensive CV features full academic coursework from Narayanganj Polytechnic Institute (EEE 2024), project documentations, and creative media references.
-      </p>
-<div class="space-y-3">
-<a class="w-full py-3 rounded-lg bg-primary text-on-primary font-label-ui text-label-ui hover:bg-primary-fixed-dim transition-colors flex items-center justify-center gap-2" href="mailto:contact@mizanurrahman.dev?subject=CV%20Request%20-%20Mizanur%20Rahman">
-<span class="material-symbols-outlined text-[18px]" data-icon="forward_to_inbox">forward_to_inbox</span>
-<span>Request PDF Directly via Email</span>
+<div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-outline tracking-widest uppercase">TVC / AI COMMERCIAL</span>
+<a class="inline-flex items-center gap-1.5 text-primary-container font-headline-sm text-body-sm font-medium hover:underline" href="#">
+<span class="">Watch</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
-<button class="w-full py-3 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-ui text-label-ui transition-colors" id="closeCvModalBtn">
-          Return to Portfolio
-        </button>
+</div>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="rounded-[14px] bg-[#1C1C1C] border border-white/10 overflow-hidden flex flex-col group hover:border-primary-container/40 hover:shadow-[0_0_24px_rgba(224,53,159,0.18)] transition-all duration-300">
+<!-- 16:10 Video Poster Container -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Macro cinematic commercial shot of chilled natural yogurt in an artisanal ceramic bowl topped with wild berries and honey drops, soft morning daylight diffused through sheer curtains, realistic condensed water drops on packaging, premium aesthetic" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUnhDwIHEOxwaoYnblsRQhri_zpLj3Pt5KJl6AixUJiLhXOTa_LwewlY3yas1_cYcUjHxr2z0L-aMH0BWIt1Kx8swCcr6I1Jcs1a-pnuVm4DJC-u542uKBbvGcZ6OdammT4dbDG4lsfZu_gSOpPyOrLNmAj_VMgBQhc6wta5KBxYEbbVk7B-BOS5ioNNOVhTMErde779f28c2xct8WTXny8MbMEv9V5zCHPpybJuEv-H6lLF9tfGz4')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1C1C1C] via-[#1C1C1C]/20 to-transparent"></div>
+<!-- Duration Badge -->
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-surface-container-lowest/80 border border-white/10 font-label-uppercase text-[10px] tracking-wider text-secondary backdrop-blur-sm">
+            30s
+          </div>
+<!-- Hover Play Overlay -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-surface-container-lowest/40 backdrop-blur-[2px]">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-surface flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
 </div>
 </div>
 </div>
-<!-- MODAL: NETLIFY DEPLOYMENT SPECS -->
-<div class="fixed inset-0 z-50 hidden bg-background/80 backdrop-blur-sm flex items-center justify-center p-4" id="specsModal">
-<div class="bg-surface-container border border-outline-variant rounded-xl max-w-lg w-full p-6 md:p-8 shadow-2xl relative">
-<button class="absolute top-5 right-5 text-on-surface-variant hover:text-on-surface p-1 rounded-lg" id="closeSpecsModal">
-<span class="material-symbols-outlined" data-icon="close">close</span>
-</button>
-<div class="flex items-center gap-2 text-primary font-label-mono text-label-mono mb-2">
-<span class="material-symbols-outlined text-[18px]" data-icon="terminal">terminal</span>
-<span>DEPLOYMENT &amp; CI/CD MANIFEST</span>
+<!-- Card Details -->
+<div class="p-6 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-title-editorial text-on-surface font-semibold mb-2 group-hover:text-primary-container transition-colors">
+              PRAN Yogurt — Morning Refresh
+            </h3>
+<p class="font-body-md text-body-sm text-on-surface-variant line-clamp-2 font-light">
+              A premium AI lifestyle commercial with post-workout refreshment, macro food cinematography and realistic textures.
+            </p>
 </div>
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-4">Netlify Production Specs</h3>
-<div class="space-y-3 font-label-mono text-[12px] bg-surface-container-lowest p-4 rounded-lg border border-outline-variant/30 text-on-surface-variant">
-<div><strong class="text-on-surface">Platform:</strong> Netlify Edge CDN</div>
-<div><strong class="text-on-surface">Form Handling:</strong> Built-in Netlify Forms (<code class="text-primary">data-netlify="true"</code>)</div>
-<div><strong class="text-on-surface">Routing:</strong> Single Page Application / Static HTML5</div>
-<div><strong class="text-on-surface">Asset Delivery:</strong> Zero arbitrary runtime, Tailwind CDN JIT</div>
-<div><strong class="text-on-surface">Security:</strong> Strict CSP Headers, Sanitized Form Payloads</div>
-</div>
-<div class="mt-6 flex justify-end">
-<button class="px-4 py-2 rounded-lg bg-primary text-on-primary text-label-ui font-label-ui hover:bg-primary-fixed-dim transition-colors" id="closeSpecsModalBtn">
-          Acknowledge Specs
-        </button>
+<div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-outline tracking-widest uppercase">LIFESTYLE / PRODUCT</span>
+<a class="inline-flex items-center gap-1.5 text-primary-container font-headline-sm text-body-sm font-medium hover:underline" href="#">
+<span class="">Watch</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
 </div>
 </div>
+</article>
+<!-- Project 3 -->
+<article class="rounded-[14px] bg-[#1C1C1C] border border-white/10 overflow-hidden flex flex-col group hover:border-primary-container/40 hover:shadow-[0_0_24px_rgba(224,53,159,0.18)] transition-all duration-300">
+<!-- 16:10 Video Poster Container -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Charming stylized 3D animated musical jungle scene with cute animal characters holding instruments, vibrant bioluminescent flora, cinematic depth of field, Pixar and DreamWorks studio lighting quality, soft warm colors" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB9lUWQwW-xJk0wxBFwr28M4NchL9YVHusYa0CpOC1-LGlpm8XiuPOOuZT52rzE8m3VnQf-d7sHhzwhJNztuEg6easP52disOnvB0uY7YMlyZnm1MvRIreSraOLkaCR46FL_oNd7NscX8qMZwDQbbf7QSO2PaAt_FuKsUm9_dZT1fxGR1WchE1AHrKi8YVdsEZLbCkjlBQ7ccHBPdjxLkW9mN9KJKQBYlqb-SlX1-grM1a2Y20XdSGI')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1C1C1C] via-[#1C1C1C]/20 to-transparent"></div>
+<!-- Duration Badge -->
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-surface-container-lowest/80 border border-white/10 font-label-uppercase text-[10px] tracking-wider text-secondary backdrop-blur-sm">
+            80s
+          </div>
+<!-- Hover Play Overlay -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-surface-container-lowest/40 backdrop-blur-[2px]">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-surface flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
 </div>
-<!-- Micro-interactions & Interactivity Script -->
+</div>
+</div>
+<!-- Card Details -->
+<div class="p-6 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-title-editorial text-on-surface font-semibold mb-2 group-hover:text-primary-container transition-colors">
+              Baby's Jungle Sound Adventure — 3D Animated Story
+            </h3>
+<p class="font-body-md text-body-sm text-on-surface-variant line-clamp-2 font-light">
+              A colorful AI-assisted 3D animated musical adventure for young audiences, with consistent cartoon characters.
+            </p>
+</div>
+<div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-outline tracking-widest uppercase">3D ANIMATION / KIDS</span>
+<a class="inline-flex items-center gap-1.5 text-primary-container font-headline-sm text-body-sm font-medium hover:underline" href="#">
+<span class="">Watch</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Project 4 -->
+<article class="rounded-[14px] bg-[#1C1C1C] border border-white/10 overflow-hidden flex flex-col group hover:border-primary-container/40 hover:shadow-[0_0_24px_rgba(224,53,159,0.18)] transition-all duration-300">
+<!-- 16:10 Video Poster Container -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Dramatic moody cinematic mystery scene with a spotlight focusing on a rogue hand crawling across a dark mahogany desk next to an antique typewriter, high contrast chiaroscuro film noir lighting with neon magenta rim lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsgDcDLqR9DVxN1eyP0bak8dMSP_T0D84zxqioZjRtuBfRBigrQilFJf47F5BlS-Ed4quuKaOhSoMnpjlXCpm0pGmpe9DTfncY3WJTled3Pbsj2xg22ByWtg3-DkAnttlCDUT0tXwPvm3fMPDufBjA6_QWZRFucw7kJvKRfNIpYkv7CWQbOO-fZD7h1KiQsuIzcKQA2dbu_aUNPEfyvYOl4irjoLO0cbdse2xGLeUTyCoQgmxZ5Kk8')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1C1C1C] via-[#1C1C1C]/20 to-transparent"></div>
+<!-- Duration Badge -->
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-surface-container-lowest/80 border border-white/10 font-label-uppercase text-[10px] tracking-wider text-secondary backdrop-blur-sm">
+            3 min
+          </div>
+<!-- Hover Play Overlay -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-surface-container-lowest/40 backdrop-blur-[2px]">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-surface flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Card Details -->
+<div class="p-6 flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-title-editorial text-on-surface font-semibold mb-2 group-hover:text-primary-container transition-colors">
+              The Hand Has a Mind of Its Own — AI Cinematic Story
+            </h3>
+<p class="font-body-md text-body-sm text-on-surface-variant line-clamp-2 font-light">
+              A humorous cinematic concept about a hand that acts on its own, with match-cut transitions and visual comedy.
+            </p>
+</div>
+<div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between">
+<span class="font-label-uppercase text-[10px] text-outline tracking-widest uppercase">SHORT FILM / COMEDY</span>
+<a class="inline-flex items-center gap-1.5 text-primary-container font-headline-sm text-body-sm font-medium hover:underline" href="#">
+<span class="">Watch</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 72px Vertical Spacer -->
+<div class="h-[72px]"></div>
+<!-- ENGINEERING SECTION -->
+<section class="w-full relative" id="engineering">
+<div class="flex items-center gap-2 mb-3">
+<span class="font-label-uppercase text-label-uppercase text-primary-container uppercase tracking-[0.2em]">Engineering</span>
+<span class="h-[1px] w-12 bg-primary-container/30"></span>
+</div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg tracking-tight">Electrical experience</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Applied skills, industry certifications, and industrial automation</p>
+</div>
+<!-- Row of 5 Compact Cards -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-3.5">
+<!-- Item 1 -->
+<div class="rounded-[14px] bg-[#1C1C1C] border border-white/10 p-5 flex flex-col items-center text-center justify-center gap-3 hover:border-secondary hover:shadow-[0_0_20px_rgba(212,177,135,0.15)] transition-all duration-300 group">
+<div class="w-11 h-11 rounded-full bg-[#111111] flex items-center justify-center border border-white/5 group-hover:border-secondary/40 transition-colors">
+<span class="material-symbols-outlined text-secondary text-xl">license</span>
+</div>
+<span class="font-headline-sm text-body-sm text-on-surface font-medium leading-tight">Electrical License</span>
+</div>
+<!-- Item 2 -->
+<div class="rounded-[14px] bg-[#1C1C1C] border border-white/10 p-5 flex flex-col items-center text-center justify-center gap-3 hover:border-secondary hover:shadow-[0_0_20px_rgba(212,177,135,0.15)] transition-all duration-300 group">
+<div class="w-11 h-11 rounded-full bg-[#111111] flex items-center justify-center border border-white/5 group-hover:border-secondary/40 transition-colors">
+<span class="material-symbols-outlined text-secondary text-xl">workspace_premium</span>
+</div>
+<span class="font-headline-sm text-body-sm text-on-surface font-medium leading-tight">NSDA Level 2</span>
+</div>
+<!-- Item 3 -->
+<div class="rounded-[14px] bg-[#1C1C1C] border border-white/10 p-5 flex flex-col items-center text-center justify-center gap-3 hover:border-secondary hover:shadow-[0_0_20px_rgba(212,177,135,0.15)] transition-all duration-300 group">
+<div class="w-11 h-11 rounded-full bg-[#111111] flex items-center justify-center border border-white/5 group-hover:border-secondary/40 transition-colors">
+<span class="material-symbols-outlined text-secondary text-xl">precision_manufacturing</span>
+</div>
+<span class="font-headline-sm text-body-sm text-on-surface font-medium leading-tight">Industrial Attachment on PLC</span>
+</div>
+<!-- Item 4 -->
+<div class="rounded-[14px] bg-[#1C1C1C] border border-white/10 p-5 flex flex-col items-center text-center justify-center gap-3 hover:border-secondary hover:shadow-[0_0_20px_rgba(212,177,135,0.15)] transition-all duration-300 group">
+<div class="w-11 h-11 rounded-full bg-[#111111] flex items-center justify-center border border-white/5 group-hover:border-secondary/40 transition-colors">
+<span class="material-symbols-outlined text-secondary text-xl">electrical_services</span>
+</div>
+<span class="font-headline-sm text-body-sm text-on-surface font-medium leading-tight">House Wiring</span>
+</div>
+<!-- Item 5 -->
+<div class="col-span-2 md:col-span-1 rounded-[14px] bg-[#1C1C1C] border border-white/10 p-5 flex flex-col items-center text-center justify-center gap-3 hover:border-secondary hover:shadow-[0_0_20px_rgba(212,177,135,0.15)] transition-all duration-300 group">
+<div class="w-11 h-11 rounded-full bg-[#111111] flex items-center justify-center border border-white/5 group-hover:border-secondary/40 transition-colors">
+<span class="material-symbols-outlined text-secondary text-xl">memory</span>
+</div>
+<span class="font-headline-sm text-body-sm text-on-surface font-medium leading-tight">Circuit Design</span>
+</div>
+</div>
+</section>
+<!-- 72px Vertical Spacer -->
+<div class="h-[72px]"></div>
+<!-- CONTACT SECTION -->
+<section class="w-full relative py-12 md:py-16 flex flex-col items-center text-center overflow-hidden rounded-[14px] bg-[#1C1C1C] border border-white/10" id="contact">
+<!-- Ambient Inner Glow -->
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-80 h-80 bg-primary-container/20 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="relative z-10 max-w-xl mx-auto px-4 flex flex-col items-center">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-[0.2em] uppercase mb-3">Get in Touch</span>
+<h2 class="font-display-hero text-headline-lg md:text-headline-lg tracking-tight mb-4 text-on-surface">
+        Let's Create Something.
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light mb-8 max-w-md">
+        Available for commercial AI directing, creative storyboarding, engineering consultations, and international collaborations.
+      </p>
+<!-- Pill Button with Copy / Direct Mail -->
+<a class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-primary-container text-on-surface font-headline-sm text-body-md font-medium shadow-[0_0_28px_rgba(224,53,159,0.4)] hover:shadow-[0_0_38px_rgba(224,53,159,0.65)] hover:scale-[1.02] transition-all duration-300 group cursor-pointer" href="mailto:ruth.mirdanmaktech@gmail.com" id="copy-email-trigger">
+<span class="material-symbols-outlined text-xl">mail</span>
+<span class="tracking-wide select-all">ruth.mirdanmaktech@gmail.com</span>
+<span class="material-symbols-outlined text-lg opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all">content_copy</span>
+</a>
+<p class="font-label-uppercase text-[11px] text-outline tracking-widest uppercase mt-4">
+        Dhaka (GMT+6) · Global Remote
+      </p>
+</div>
+</section>
+</div>
 <script>
-    // Mobile Drawer Toggle
-    const mobileNavToggle = document.getElementById('mobileNavToggle');
-    const mobileDrawer = document.getElementById('mobileDrawer');
-    if (mobileNavToggle && mobileDrawer) {
-      mobileNavToggle.addEventListener('click', () => {
-        mobileDrawer.classList.toggle('hidden');
-      });
-      // Close drawer when clicking any link
-      mobileDrawer.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          mobileDrawer.classList.add('hidden');
-        });
-      });
-    }
-
-    // Skills Filter Tab Logic
-    const skillTabs = document.querySelectorAll('.skill-tab-btn');
-    const skillCards = document.querySelectorAll('.skill-card');
-
-    skillTabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        skillTabs.forEach(t => {
-          t.classList.remove('active', 'bg-primary', 'text-on-primary', 'border-primary');
-          t.classList.add('bg-surface-container-low', 'text-on-surface-variant', 'border-outline-variant/40');
-        });
-        tab.classList.add('active', 'bg-primary', 'text-on-primary', 'border-primary');
-        tab.classList.remove('bg-surface-container-low', 'text-on-surface-variant', 'border-outline-variant/40');
-
-        const target = tab.getAttribute('data-target');
-        skillCards.forEach(card => {
-          if (target === 'all' || card.getAttribute('data-category') === target) {
-            card.style.display = 'block';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-
-    // Project Quick-View Modal
-    const projectCards = document.querySelectorAll('.project-card');
-    const projectModal = document.getElementById('projectModal');
-    const closeProjectModal = document.getElementById('closeProjectModal');
-    const closeProjectModalBtn = document.getElementById('closeProjectModalBtn');
-
-    projectCards.forEach(card => {
-      card.addEventListener('click', () => {
-        document.getElementById('modalTitle').textContent = card.dataset.title;
-        document.getElementById('modalCategory').textContent = card.dataset.category;
-        document.getElementById('modalTools').textContent = card.dataset.tools;
-        document.getElementById('modalDesc').textContent = card.dataset.desc;
-        document.getElementById('modalOutput').textContent = card.dataset.output;
-        projectModal.classList.remove('hidden');
-      });
-    });
-
-    const closePModal = () => projectModal.classList.add('hidden');
-    if (closeProjectModal) closeProjectModal.addEventListener('click', closePModal);
-    if (closeProjectModalBtn) closeProjectModalBtn.addEventListener('click', closePModal);
-
-    // CV Request Modal
-    const cvModalOpenBtn = document.getElementById('cvModalOpenBtn');
-    const cvModal = document.getElementById('cvModal');
-    const closeCvModal = document.getElementById('closeCvModal');
-    const closeCvModalBtn = document.getElementById('closeCvModalBtn');
-
-    if (cvModalOpenBtn && cvModal) {
-      cvModalOpenBtn.addEventListener('click', () => cvModal.classList.remove('hidden'));
-      const closeCModal = () => cvModal.classList.add('hidden');
-      if (closeCvModal) closeCvModal.addEventListener('click', closeCModal);
-      if (closeCvModalBtn) closeCvModalBtn.addEventListener('click', closeCModal);
-    }
-
-    // Netlify Specs Modal
-    const openSpecsBtn = document.getElementById('openSpecsBtn');
-    const footerSpecsBtn = document.getElementById('footerSpecsBtn');
-    const specsModal = document.getElementById('specsModal');
-    const closeSpecsModal = document.getElementById('closeSpecsModal');
-    const closeSpecsModalBtn = document.getElementById('closeSpecsModalBtn');
-
-    const showSpecs = () => specsModal.classList.remove('hidden');
-    const hideSpecs = () => specsModal.classList.add('hidden');
-
-    if (openSpecsBtn) openSpecsBtn.addEventListener('click', showSpecs);
-    if (footerSpecsBtn) footerSpecsBtn.addEventListener('click', showSpecs);
-    if (closeSpecsModal) closeSpecsModal.addEventListener('click', hideSpecs);
-    if (closeSpecsModalBtn) closeSpecsModalBtn.addEventListener('click', hideSpecs);
-
-    // Form Submission Simulation for Netlify Form
-    const contactForm = document.getElementById('portfolioContactForm');
-    const successMessage = document.getElementById('formSuccessMessage');
-    const submitBtn = document.getElementById('submitBtn');
-    const btnText = document.getElementById('btnText');
-
-    if (contactForm) {
-      contactForm.addEventListener('submit', (e) => {
+  // Simple interactive filter behavior for works section
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-pill');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
         e.preventDefault();
-        submitBtn.disabled = true;
-        btnText.textContent = "Transmitting...";
-        
-        // Simulating immediate client feedback before native POST
-        setTimeout(() => {
-          submitBtn.disabled = false;
-          btnText.textContent = "Transmit Message";
-          successMessage.classList.remove('hidden');
-          contactForm.reset();
-        }, 800);
+        filterButtons.forEach(b => {
+          b.className = 'filter-pill whitespace-nowrap px-4 py-1.5 rounded-full text-xs font-label-uppercase tracking-wider uppercase bg-[#1C1C1C] text-on-surface-variant border border-white/10 hover:text-on-surface hover:border-white/25 transition-all';
+        });
+        btn.className = 'filter-pill whitespace-nowrap px-4 py-1.5 rounded-full text-xs font-label-uppercase tracking-wider uppercase bg-primary-container text-on-surface font-semibold shadow-[0_0_14px_rgba(224,53,159,0.3)] transition-all';
       });
-    }
-
-    // Close modals on outside click
-    window.addEventListener('click', (e) => {
-      if (e.target === projectModal) projectModal.classList.add('hidden');
-      if (e.target === cvModal) cvModal.classList.add('hidden');
-      if (e.target === specsModal) specsModal.classList.add('hidden');
     });
-  </script>
+  });
+</script></div></main><footer class="w-full border-t border-[#222222] bg-[#111111] py-space-xl"><div class="max-w-[1060px] mx-auto px-gutter-mobile md:px-gutter flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left"><p class="font-body-sm text-body-sm text-on-surface-variant">Crafted with AI · Designed with passion · © 2026 Leah Ruth Urmi Mirdan</p><div class="flex items-center gap-6"><span class="font-label-uppercase text-label-uppercase text-outline tracking-widest uppercase">Editorial Suite</span><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span><span class="font-label-uppercase text-label-uppercase text-outline tracking-widest uppercase">Tokyo · London · NYC</span></div></div></footer>
+
 </body></html>
